@@ -1,7 +1,7 @@
 <template lang="">
   <h1>我是B组件</h1>
   <p>来自A的信息：{{ msgFormA }}</p>
-  <a-button :type="defaultType" @click="sendMsg">向A发送信息</a-button>
+  <a-button :type="defaultType" @click="sendMsg"> 向A发送信息 </a-button>
 </template>
 <script setup lang="ts">
 import eventBus from '@/utils/eventBus'

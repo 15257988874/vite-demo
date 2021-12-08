@@ -3,7 +3,7 @@ console.log(import.meta.env)
 </script>
 <template>
   <div class="container flex flex-col items-center p-8 mx-auto">
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
