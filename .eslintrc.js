@@ -24,6 +24,18 @@ module.exports = {
   // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-prettier的缩写
   plugins: ['vue', '@typescript-eslint', 'prettier'],
   rules: {
+    'vue/max-attributes-per-line': [
+      2,
+      {
+        singleline: 10,
+        multiline: {
+          max: 1,
+          allowFirstLine: false,
+        },
+      },
+    ],
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/multiline-html-element-content-newline': 'off',
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',

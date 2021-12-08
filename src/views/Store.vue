@@ -1,12 +1,20 @@
 <template lang="">
   <div>
     <h1>mainStore</h1>
-    <p>main msg: {{ mainStore.msg }}</p>
+    <p>
+      main msg:
+      {{ mainStore.msg }}
+    </p>
     <h1>userStore</h1>
     <p>name: {{ name }}</p>
-    <p>nameLength: {{ nameLength }}</p>
+    <p>
+      nameLength:
+      {{ nameLength }}
+    </p>
     <p>phone: {{ phone }}</p>
-    <a-button type="primary" @click="handleChangeName"> 改变store用户名 </a-button>
+    <a-button type="primary" @click="handleChangeName">
+      改变store用户名
+    </a-button>
   </div>
 </template>
 <script setup lang="ts">
