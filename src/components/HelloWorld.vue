@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue'
 // import SvgIcon from "./SvgIcon/SvgIcon.vue";
-defineProps<{ msg: string }>();
-
-const count = ref(0);
+defineProps<{ msg: string }>()
+const count = ref(0)
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
   <SvgIcon name="vip" color="#0f0" />
-  <SvgIcon name="pwd" color="#f00" />
-  <div></div>
+  <a-rate></a-rate>
 </template>
 
 <style scoped>
