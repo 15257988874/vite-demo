@@ -6,11 +6,11 @@
     <p>name: {{ name }}</p>
     <p>nameLength: {{ nameLength }}</p>
     <p>phone: {{ phone }}</p>
-    <a-button type="primary" @click="handleChangeName">改变store用户名</a-button>
+    <a-button type="primary" @click="handleChangeName"> 改变store用户名 </a-button>
   </div>
 </template>
 <script setup lang="ts">
-import { toRefs } from '@vue/reactivity'
+import { toRefs } from 'vue'
 import { useMainStore } from '../store/main'
 import { useUserStore } from '../store/user'
 const mainStore = useMainStore()

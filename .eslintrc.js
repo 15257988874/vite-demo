@@ -9,12 +9,12 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    // 'plugin:prettier/recommended',
     // eslint-config-prettier 的缩写
     'prettier',
   ],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 2020,
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
     ecmaFeatures: {

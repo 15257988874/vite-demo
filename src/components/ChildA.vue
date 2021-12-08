@@ -1,7 +1,7 @@
 <template>
   <h1>我是A组件</h1>
-  <a-button class="mb-8" :type="defaultType" danger @click="sendMsg">向B组件发送信息</a-button>
-  <a-button class="ml-4" type="primary" @click="addCount">+1</a-button>
+  <a-button class="mb-8" :type="defaultType" danger @click="sendMsg"> 向B组件发送信息 </a-button>
+  <a-button class="ml-4" type="primary" @click="addCount"> +1 </a-button>
   <p>counter: {{ counter }}</p>
 </template>
 <script setup lang="ts">

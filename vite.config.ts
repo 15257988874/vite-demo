@@ -29,4 +29,12 @@ export default defineConfig({
     open: true,
     hmr: true,
   },
+  // 注入全局样式文件
+  css: {
+    preprocessorOptions: {
+      less: {
+        additionalData: '@import "@/styles/variables.less";',
+      },
+    },
+  },
 })
