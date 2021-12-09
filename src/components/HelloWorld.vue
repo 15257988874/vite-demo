@@ -1,10 +1,23 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
+import { useMouse, usePreferredDark, useLocalStorage } from '@vueuse/core'
 // import SvgIcon from "./SvgIcon/SvgIcon.vue";
 defineProps<{
   msg: string
 }>()
 const count = ref(0)
+// tracks mouse position
+const { x, y } = useMouse()
+
+// is user prefers dark theme
+const isDark = usePreferredDark()
+
+// persist state in localStorage
+const store = useLocalStorage('my-storage', {
+  name: 'Apple',
+  color: 'red',
+})
+console.log(isDark.value, store.value.name)
 </script>
 
 <template>
@@ -19,6 +32,7 @@ const count = ref(0)
     tempore, corrupti aliquam voluptatibus voluptatem hic, laudantium eius
     soluta. Placeat.
   </div>
+  <p>x: {{ x }} y: {{ y }}</p>
 </template>
 
 <style lang="less" scoped>
