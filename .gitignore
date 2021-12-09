@@ -5,3 +5,4 @@ dist-ssr
 *.local
 directoryList.md
 stats.html
+commitlint.config.js
